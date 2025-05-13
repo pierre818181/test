@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-ENTRYPOINT ["python", "handler.py"]
+RUN chmod +x script.sh
+
+ENTRYPOINT ["./script.sh"]
