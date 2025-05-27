@@ -6,4 +6,6 @@ COPY . .
 
 RUN chmod +x script.sh
 
+RUN pip install runpod
+
 ENTRYPOINT ["./script.sh"]
